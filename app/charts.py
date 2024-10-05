@@ -6,7 +6,7 @@ def generate_bar_chart(labels, values):
     fig, ax = plt.subplots()
     ax.bar(labels, values)
 
-    plt.savefig('./app/bar_chart.png')
+    plt.savefig('bar_chart.png')
     plt.close()
 
 def generate_line_chart(x, y, title, xlabel, ylabel):
@@ -23,7 +23,7 @@ def generate_line_chart(x, y, title, xlabel, ylabel):
     # Label the y-axis
     plt.ylabel(ylabel)
 
-    plt.savefig('./app/line_chart.png')
+    plt.savefig('line_chart.png')
     plt.close()
 
 def generate_pie_chart(labels, values):
@@ -31,7 +31,7 @@ def generate_pie_chart(labels, values):
     fig, ax = plt.subplots()
     ax.pie(values, labels=labels, autopct='%1.1f%%')
     ax.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle
-    plt.savefig('./app/pie_chart.png')
+    plt.savefig('pie_chart.png')
     plt.close()
 
 if __name__ == '__main__':
